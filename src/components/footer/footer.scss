@@ -1,0 +1,20 @@
+/*footer*/
+footer {
+    background: #212121;
+    color: #afafaf;
+    flex: 0 1 auto;
+    padding: 15px;
+}
+.footer-wrapper {    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+    &__logo {
+        img {
+            width: 100px;
+        }
+    }
+}
+/*footer*/

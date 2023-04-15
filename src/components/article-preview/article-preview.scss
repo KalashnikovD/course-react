@@ -1,0 +1,90 @@
+/*blog starts*/
+.blogs {
+    background: #f6f6f6;
+    padding: 40px 15px 40px 15px;
+
+    &-title {
+        text-align: center;
+    }
+
+    &-list {
+        display: flex;
+        flex-wrap: wrap;  
+        justify-content: space-between;  
+        
+        article {
+            background: #fff;
+            order: 0;
+            flex: 0 1 auto;
+            width: 31%;
+            margin-bottom: 50px;
+            position: relative;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+
+            @media only screen and (max-width: 768px) {                
+                width: 100%;
+            }
+        }
+    }   
+
+    .article{
+        &-image {
+            position: relative;
+            overflow: hidden;
+            font-size: 0px;
+            height: 170px;;    
+            img {
+                transition: transform 0.4s;
+                transform: scale3d(1,1,1);
+            }
+    
+            &:after {
+                content: '';
+                position: absolute;
+                border: 1px solid #ffffff;
+                right: 8px;
+                top: 8px;
+                bottom: 8px;
+                left: 8px;
+                z-index: 2;
+                transition: opacity 0.35s, transform 0.35s;
+            }
+    
+            &:hover:after {
+                opacity: 1;
+                transform:  rotate(135deg);
+            }
+    
+            &:hover img {
+                transition: transform 0.4s;
+                transform: scale3d(1.1,1.1,1.1);
+            }
+        }
+
+        &-description {
+            padding: 16px;
+            padding-bottom: 35px;
+    
+            h4 {
+                padding-bottom: 12px;
+                font-size: 24px;
+            }
+            p {
+                padding-bottom: 10px;
+                line-height: 120%;
+            }
+            .button {
+                position: absolute;
+                width: 165px;
+                height: 43px;
+                bottom: -21px;
+                left: 50%;
+                margin-left: -82px;
+                z-index: 2;    
+            }
+        }
+    }
+}
+
+
+/*blog finished*/
