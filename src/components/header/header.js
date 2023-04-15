@@ -1,15 +1,15 @@
 import Nav from "./nav/nav";
-import logo from "../../media/logo.png"
 import './header.scss';
-function Header(){
+function Header(props){
+    console.log(props.nav)
     return(
         <header>
             <div className="header-wrapper">
                 <div className="header-logo">
-                    <a href="#" title=""><img src={logo} alt="Mangata and Gallo"/></a>
-                </div>              
+                    <span><img src={props.logo.Src} alt={props.logo.Alt}/></span>
+                </div>
 
-                <Nav/>
+                <Nav nav={props.nav}/>
                 
             </div>                
         </header>

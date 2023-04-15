@@ -13,32 +13,32 @@ function ArticlePreview (){
                     <div className="blogs-list">
                         <article>
                             <div className="article-image">
-                                <a href="#" title="article image"><img src={blogImage1} alt="article image"/></a>
+                                <span><img src={blogImage1} alt="article image"/></span>
                             </div>
                             <div className="article-description">
-                                <h4><a href="#" title="">Blog title</a></h4>
+                                <h4>Blog title</h4>
                                 <p>Mangata and Gallo is a jewelry store that specializes in special occasions like engagements, weddings and anniversaries. The jewelry company primarily operates online and has a small storefront in Austin, Texas with an atelier attached for browsing. </p>
-                                <a className="button button-gray" href="#" title="More">More</a>
+                                <p className="button button-gray">More</p>
                             </div>
                         </article>
                         <article>
                             <div className="article-image">
-                                <a href="#" title="article image"><img src={blogImage2}  alt="article image"/></a>
+                                <span><img src={blogImage2}  alt="article image"/></span>
                             </div>
                             <div className="article-description">
-                                <h4><a href="#" title="">Blog title</a></h4>
+                                <h4>Blog title</h4>
                                 <p>Mangata and Gallo is a jewelry store that specializes in special occasions like engagements, weddings and anniversaries.  </p>
-                                <a className="button button-gray" href="#" title="More">More</a>
+                                <p className="button button-gray">More</p>
                             </div>
                         </article>
                         <article>
                             <div className="article-image">
-                                <a href="#" title="article image"><img src={blogImage3}  alt="article image"/></a>
+                                <span><img src={blogImage3}  alt="article image"/></span>
                             </div>
                             <div className="article-description">
-                                <h4><a href="#" title="">Blog title</a></h4>
+                                <h4>Blog title</h4>
                                 <p>Mangata and Gallo is a jewelry store that specializes in special occasions like engagements, weddings and anniversaries. The jewelry company primarily operates online and has a small storefront in Austin, </p>
-                                <a className="button button-gray" href="#" title="More">More</a>
+                                <span className="button button-gray">More</span>
                             </div>
                         </article>
                     </div>

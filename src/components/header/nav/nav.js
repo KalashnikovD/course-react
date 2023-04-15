@@ -1,15 +1,19 @@
 import './nav.scss';
 
-function Nav() {
+function Nav(props) {
+    console.log(props.nav)
+    const navigationArr = props.nav.Links;
+    const navigationItems = navigationArr.map((element) => {
+        return <li key={element.Id}><span>{element.Name}</span></li>
+    });
+
+
     return (
         <div class="header-nav">
-                        <a class="icon-drop-navigation" href="#" title=""><span></span></a>                        
+                        <span class="icon-drop-navigation"><span></span></span>                        
                         <nav>
                             <ul>
-                                <li><a href="index.html" title="Mangata and Gallo">Home</a></li>
-                                <li><a href="#" title="Products">Products</a></li>
-                                <li><a href="#" title="Contacts">Contacts</a></li>
-                                <li><a href="#" title="Info">Info</a></li>
+                                {navigationItems}
                             </ul>
                         </nav>                        
                     </div>

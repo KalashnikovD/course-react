@@ -4,11 +4,12 @@ import './normalize.scss';
 import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Data from './json/data.json';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App data={Data} />
   </React.StrictMode>
 );
 

@@ -1,21 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/header/header';
-import Promotion from './components/promo/promo';
-import ArticlePreview from './components/article-preview/article-preview';
+import Main from './components/main/main';
 import Footer from './components/footer/footer';
 
 
-function App() {
+function App(props) {
+  console.log(props.data.Logo)
   return (
     <div className='App page-container'>
-        <div class="page-wrapper">
-          <Header/>
-          <main>
-              <Promotion/>
-              <ArticlePreview/>
-          </main>
-
+        <div className="page-wrapper">
+          <Header logo={props.data.Logo} nav={props.data.SectionMenu}/>
+          <Main/>
           <Footer/>
       </div>
     </div>

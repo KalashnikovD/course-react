@@ -1,0 +1,106 @@
+{  
+  "Logo": {
+    "Src": "./logo.png",
+    "Alt": "Logo Header"
+  },
+  "LogoFooter": {
+    "Src": "./logo-footer.png",
+    "Alt": "Logo Footer"
+  }, 
+
+  "Promotion": {
+    "title": "Mangata and Gallo Promotion",
+    "Image": {
+      "Src": "./media/promotion.jpg",
+      "Width": 1200,
+      "Height": 575,
+      "Alt": ""              
+    },
+    "Url": "/promotion" 
+  },
+  "SectionMenu": {
+    "Links": [
+      {
+        "Name": "Home",
+        "Url": "/",
+        "Id": "idNavHome"
+      },
+      {
+        "Name": "Products",
+        "Url": "/products",
+        "Id": "idNavProducts"
+      },
+      {
+        "Name": "Contacts",
+        "Url": "/contacts",
+        "Id": "idNavContacts"
+      },
+      {
+        "Name": "Info",
+        "Url": "/info",
+        "Id": "idNavInfo"
+      }
+    ]
+  },
+  
+  "Listings": {
+    "Lists": [
+      {
+        "Title": "Blogs",
+        "TitleDescription": "Short description of the section",
+        "Items": [
+          {
+            "ItemId": 0,
+            "Url": "#",            
+            "Image": {
+              "Src": "./blog-image-1.jpg",
+              "Width": 1080,
+              "Height": 1080,
+              "Alt": ""              
+            },
+            "Title": "Blog title",
+            "Description": "Mangata and Gallo is a jewelry store that specializes in special occasions like engagements, weddings and anniversaries. The jewelry company primarily operates online and has a small storefront in Austin, Texas with an atelier attached for browsing."
+          }
+        ]
+      },
+      {
+        "Title": "Blogs",
+        "TitleDescription": "Short description of the section",
+        "Items": [
+          {
+            "ItemId": 1,
+            "Url": "#",            
+            "Image": {
+              "Src": "./blog-image-1.jpg",
+              "Width": 480,
+              "Height": 480,
+              "Alt": ""              
+            },
+            "Title": "Blog title",
+            "Description": "Mangata and Gallo is a jewelry store that specializes in special occasions like engagements, weddings and anniversaries."
+          }
+        ]
+      },
+      {
+        "Title": "Blogs",
+        "TitleDescription": "Short description of the section",
+        "Items": [
+          {
+            "ItemId": 2,
+            "Url": "#",            
+            "Image": {
+              "Src": "./blog-image-1.jpg",
+              "Width": 855,
+              "Height": 365,
+              "Alt": ""              
+            },
+            "Title": "Blog title",
+            "Description": "Mangata and Gallo is a jewelry store that specializes in special occasions like engagements, weddings and anniversaries. The jewelry company primarily operates online and has a small storefront in Austin,"
+          }
+        ]
+      }
+    ]
+  },
+  "Copyrights": "© Mangata and Gallo 2023"
+  
+}

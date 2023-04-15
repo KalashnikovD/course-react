@@ -45,7 +45,7 @@
                 width: 100%;      
             }
             
-            a {
+            a, span {
                 background: rgba(33, 33, 33, 0);                    
                 color: #010101;
                 padding-top: 11px;
@@ -54,6 +54,7 @@
                 text-align: center;
                 transition: all 0.4s linear;
                 text-decoration: none;
+                cursor: pointer;
 
                 &:hover {
                     background: rgba(33, 33, 33, 1);   

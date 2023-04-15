@@ -8,9 +8,9 @@ function Promotion(){
                         <div className="promotion__image">
                             <img src={imagePromotion} alt="Promotion img"/>
                         </div>
-                        <a href="#" className="promotion__description" title="Promotion description">
+                        <p className="promotion__description">
                             <span>Mangata and Gallo Promotion</span>
-                        </a>
+                        </p>
                     </div>
         </div>
     )
