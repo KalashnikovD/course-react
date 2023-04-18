@@ -1,15 +1,17 @@
 import './promo.scss';
-import imagePromotion from '../../media/promotion.jpg';
+import { useDataContext } from '../provider/Provider';
 
 function Promotion(){
+    const {data} = useDataContext();
+
     return(
         <div className="promotion">
                     <div className="promotion-container">
                         <div className="promotion__image">
-                            <img src={imagePromotion} alt="Promotion img"/>
+                            <img src={data.Promotion.Image.Src} alt={data.Promotion.Image.Alt}/>
                         </div>
                         <p className="promotion__description">
-                            <span>Mangata and Gallo Promotion</span>
+                            <span>{data.Promotion.Title}</span>
                         </p>
                     </div>
         </div>

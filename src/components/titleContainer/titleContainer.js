@@ -1,10 +1,10 @@
 import './titleContainer.scss';
 
-function TitleContainer () {
+function TitleContainer (props) {
     return(
         <div className="title-container">
-                <h1>Blogs</h1>
-                <p>Short description of the section</p>
+                <h1>{props.title}</h1>
+                <p>{props.description}</p>
         </div>
     );
 }

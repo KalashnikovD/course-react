@@ -1,15 +1,17 @@
 import Nav from "./nav/Nav";
 import './header.scss';
+import { useDataContext } from "../provider/Provider";
+
 function Header(props){
-    console.log(props.nav)
+    const {data} = useDataContext();
     return(
         <header>
             <div className="header-wrapper">
                 <div className="header-logo">
-                    <span><img src={props.logo.Src} alt={props.logo.Alt}/></span>
+                    <span><img src={data.Logo.Src} alt={data.Logo.Alt}/></span>
                 </div>
 
-                <Nav nav={props.nav}/>
+                <Nav/>
                 
             </div>                
         </header>

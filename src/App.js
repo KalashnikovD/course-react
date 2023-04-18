@@ -5,11 +5,10 @@ import Footer from './components/footer/Footer';
 
 
 function App(props) {
-  console.log(props.data.Logo)
   return (
     <div className='App page-container'>
         <div className="page-wrapper">     
-            <Header logo={props.data.Logo} nav={props.data.SectionMenu}/>
+            <Header/>
             <Main data={props.data}/>
             <Footer/>
       </div>

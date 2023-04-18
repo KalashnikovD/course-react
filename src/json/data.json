@@ -9,7 +9,7 @@
   }, 
 
   "Promotion": {
-    "title": "Mangata and Gallo Promotion",
+    "Title": "Mangata and Gallo Promotion",
     "Image": {
       "Src": "./media/promotion.jpg",
       "Width": 1200,
@@ -44,10 +44,10 @@
   },
   
   "Listings": {
+    "Title": "Blogs",
+    "TitleDescription": "Short description of the section",
     "Lists": [
-      {
-        "Title": "Blogs",
-        "TitleDescription": "Short description of the section",
+      {        
         "Items": [
           {
             "ItemId": 0,
@@ -71,7 +71,7 @@
             "ItemId": 1,
             "Url": "#",            
             "Image": {
-              "Src": "./blog-image-1.jpg",
+              "Src": "./blog-image-2.jpg",
               "Width": 480,
               "Height": 480,
               "Alt": ""              
@@ -89,7 +89,7 @@
             "ItemId": 2,
             "Url": "#",            
             "Image": {
-              "Src": "./blog-image-1.jpg",
+              "Src": "./blog-image-3.jpg",
               "Width": 855,
               "Height": 365,
               "Alt": ""              

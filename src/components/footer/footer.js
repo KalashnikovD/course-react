@@ -1,13 +1,16 @@
 import './footer.scss';
-import logoFooter from "../../media/logo-footer.png";
+import { useDataContext } from '../provider/Provider';
 
 
 function Footer(){
+
+    const {data} = useDataContext();
+
     return(
         <footer>
                 <div className="footer-wrapper">
-                    <div className="footer-wrapper__logo"><img src={logoFooter}  alt=""/></div>
-                    <div>© Mangata and Gallo 2023</div>
+                    <div className="footer-wrapper__logo"><img src={data.LogoFooter.Src}  alt="{data.LogoFooter.Alt}"/></div>
+                    <div>{data.Copyrights}</div>
                 </div>
         </footer>
     )
