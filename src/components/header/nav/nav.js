@@ -11,8 +11,8 @@ function Nav(props) {
 
 
     return (
-            <div class="header-nav">
-                        <span class="icon-drop-navigation"><span></span></span>                        
+            <div className="header-nav">
+                        <span className="icon-drop-navigation"><span></span></span>                        
                         <nav>
                             <ul>
                                 {navigationItems}

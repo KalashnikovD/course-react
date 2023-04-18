@@ -9,7 +9,7 @@ function App(props) {
     <div className='App page-container'>
         <div className="page-wrapper">     
             <Header/>
-            <Main data={props.data}/>
+            <Main/>
             <Footer/>
       </div>
     </div>
