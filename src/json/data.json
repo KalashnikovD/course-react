@@ -11,7 +11,7 @@
   "Promotion": {
     "Title": "Mangata and Gallo Promotion",
     "Image": {
-      "Src": "./media/promotion.jpg",
+      "Src": "./promotion.jpg",
       "Width": 1200,
       "Height": 575,
       "Alt": ""              

@@ -1,17 +1,19 @@
 import './App.css';
 import Header from './components/header/Header';
-import Main from './components/main/Main';
 import Footer from './components/footer/Footer';
-
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './components/homePage/HomePage';
+import ArticlePage from './components/articlePage/ArticlePage';
 
 function App(props) {
   return (
-    <div className='App page-container'>
-        <div className="page-wrapper">     
+    <div className='App page-wrapper'>   
             <Header/>
-            <Main/>
+              <Routes>
+                <Route path='/' element={<HomePage/>}/>
+                <Route path='/blog' element={<ArticlePage/>}/>
+              </Routes>
             <Footer/>
-      </div>
     </div>
   )
 }
