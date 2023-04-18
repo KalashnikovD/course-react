@@ -8,10 +8,12 @@ function Footer(){
 
     return(
         <footer>
+            <div className="center">
                 <div className="footer-wrapper">
                     <div className="footer-wrapper__logo"><img src={data.LogoFooter.Src}  alt="{data.LogoFooter.Alt}"/></div>
                     <div>{data.Copyrights}</div>
                 </div>
+            </div>    
         </footer>
     )
 }

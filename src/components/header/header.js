@@ -7,12 +7,12 @@ function Header(props){
     return(
         <header>
             <div className="header-wrapper">
-                <div className="header-logo">
-                    <span><img src={data.Logo.Src} alt={data.Logo.Alt}/></span>
-                </div>
-
-                <Nav/>
-                
+                <div className="center">
+                    <div className="header-logo">
+                        <span><img src={data.Logo.Src} alt={data.Logo.Alt}/></span>
+                    </div>
+                </div>    
+                <Nav/>                
             </div>                
         </header>
     )

@@ -1,6 +1,7 @@
 import './article-preview.scss';
 import TitleContainer from "../titleContainer/TitleContainer";
 import { useDataContext } from '../provider/Provider';
+import { Link } from 'react-router-dom';
 
 function ArticlePreview (){
     const {data} = useDataContext();
@@ -11,12 +12,13 @@ function ArticlePreview (){
         return (
                 <article key={itemObj.ItemId}>
                             <div className="article-image">
-                                <span><img src={itemObj.Image.Src} alt={itemObj.Image.Alt}/></span>
+                            <span><img src={itemObj.Image.Src} alt={itemObj.Image.Alt}/></span>
+                            <Link to={itemObj.Url}></Link>
                             </div>
                             <div className="article-description">
                                 <h4>{itemObj.Title}</h4>
                                 <p>{itemObj.Description} </p>
-                                <p className="button button-gray">More</p>
+                                <Link className="button button-gray" to={itemObj.Url}>More</Link>
                             </div>
                         </article>
         )
@@ -24,12 +26,13 @@ function ArticlePreview (){
 
     return(
         <div className="blogs">
+            <div className="center">
                     <TitleContainer title={data.Listings.Title} description={data.Listings.TitleDescription}/>
                     <div className="blogs-list">
                         {blogItem}
                     </div>
-                    
-                </div>
+            </div>        
+        </div>
     )
 }
 
