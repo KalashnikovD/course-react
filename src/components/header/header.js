@@ -1,4 +1,4 @@
-import Nav from "./nav/nav";
+import Nav from "./nav/Nav";
 import './header.scss';
 function Header(props){
     console.log(props.nav)

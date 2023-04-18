@@ -4,12 +4,16 @@ import './normalize.scss';
 import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import DataProvide from './components/provider/Provider';
 import Data from './json/data.json';
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+
 root.render(
   <React.StrictMode>
-    <App data={Data} />
+      <DataProvide>
+        <App data={Data} />  
+      </DataProvide>
   </React.StrictMode>
 );
 

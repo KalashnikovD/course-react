@@ -1,6 +1,6 @@
 import './main.scss';
-import Promotion from '../../components/promo/promo';
-import ArticlePreview from '../../components/article-preview/article-preview';
+import Promotion from '../../components/promo/Promo';
+import ArticlePreview from '../../components/article-preview/ArticlePreview';
 
 function Main () {
     return (

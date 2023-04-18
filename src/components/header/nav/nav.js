@@ -1,15 +1,17 @@
 import './nav.scss';
+import { useDataContext } from '../../provider/Provider';
+
 
 function Nav(props) {
-    console.log(props.nav)
-    const navigationArr = props.nav.Links;
+    const {data} = useDataContext();
+    const navigationArr = data.SectionMenu.Links;
     const navigationItems = navigationArr.map((element) => {
         return <li key={element.Id}><span>{element.Name}</span></li>
     });
 
 
     return (
-        <div class="header-nav">
+            <div class="header-nav">
                         <span class="icon-drop-navigation"><span></span></span>                        
                         <nav>
                             <ul>
@@ -17,6 +19,7 @@ function Nav(props) {
                             </ul>
                         </nav>                        
                     </div>
+    
     )
 }
 
