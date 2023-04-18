@@ -1,13 +1,15 @@
-import Nav from "./nav/nav";
-import logo from "../../media/logo.png"
+import Nav from "./nav/Nav";
 import './header.scss';
-function Header(){
+import { useDataContext } from "../provider/Provider";
+
+function Header(props){
+    const {data} = useDataContext();
     return(
         <header>
             <div className="header-wrapper">
                 <div className="header-logo">
-                    <a href="#" title=""><img src={logo} alt="Mangata and Gallo"/></a>
-                </div>              
+                    <span><img src={data.Logo.Src} alt={data.Logo.Alt}/></span>
+                </div>
 
                 <Nav/>
                 
