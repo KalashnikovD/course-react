@@ -18,8 +18,7 @@ function Nav(props) {
                                 {navigationItems}
                             </ul>
                         </nav>                        
-                    </div>
-    
+                    </div>    
     )
 }
 
