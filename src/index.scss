@@ -6,6 +6,18 @@ body {
   color: #3b3b3b;
 }
 
+
+.center {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media only screen and (max-width: 1200px) {
+    width: 100%;    
+  }
+}
+
 a {
   text-decoration: none;
   color: #a64686;
@@ -39,6 +51,18 @@ a {
           text-decoration: none;
       }
   }
+
+  &:disabled {
+    background: #353535;
+    color: #fff;
+    cursor: inherit!important;
+    opacity: 0.5;
+
+    &:hover {
+      background: #353535;
+      border: 1px solid transparent!important;
+    }
+  }
 }
 
 #root {
@@ -66,4 +90,9 @@ main {
   flex: 1 1 auto;
 }
 
+.inside-page-wrapper {
+  padding: 40px 15px;;
+}
 /*Main finished*/
+
+

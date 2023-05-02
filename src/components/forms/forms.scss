@@ -1,0 +1,70 @@
+.form {
+    max-width: 320px;
+    margin: 0 auto;
+	&-field {
+		margin-bottom: 18px;
+		color: #626262;
+		font-size: 14px;
+		font-weight: 400;
+
+        sup {
+            color: red;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;;
+        }
+
+		input[type=text], input[type=tel], input[type=phone], input[type=email], input[type=password] {
+			width: 100%;
+			padding-top: 9px;
+			padding-bottom: 9px;
+			padding-left: 18px;
+            font-size: 16px;
+            line-height: 120%;
+            color: #626262;
+            border: 1px solid #d3d3d3;
+		}
+
+		input[type=checkbox] {
+			position: relative; top: 1px;
+			margin-left: 12px;
+			margin-right: 10px;
+		}
+		textarea {
+			width: 100%;
+			padding-top: 8px;
+			padding-bottom: 9px;
+			height: 100px;
+			overflow: auto;
+			resize: none;
+			padding-left: 18px;
+		}
+
+        select {
+            width: 100%;
+			padding-top: 8px;
+			padding-bottom: 9px;
+			padding-left: 18px;
+            font-size: 16px;
+            color: #626262;
+            border: 1px solid #d3d3d3;
+        }
+
+
+		&-columns {
+			&__column {
+				order: 0;
+				flex: 0 1 auto;
+				align-self: auto;
+				width: 48%;
+			}
+		}
+
+	}
+}
+
+.FieldError {
+    color: red;
+}
